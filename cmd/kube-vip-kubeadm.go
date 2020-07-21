@@ -36,7 +36,7 @@ func init() {
 	kubeKubeadm.PersistentFlags().BoolVar(&initConfig.StartAsLeader, "startAsLeader", false, "Start this instance as the cluster leader")
 
 	kubeKubeadm.PersistentFlags().BoolVar(&initConfig.AddPeersAsBackends, "addPeersToLB", true, "The Virtual IP addres")
-	kubeKubeadm.PersistentFlags().BoolVar(&initConfig.GratuitousARP, "arp", true, "Enable Arp for Vip changes")
+	kubeKubeadm.PersistentFlags().BoolVar(&initConfig.GratuitousARP, "arp", false, "Enable Arp for Vip changes")
 	kubeKubeadm.PersistentFlags().BoolVar(&initConfig.EnableLeaderElection, "leaderElection", false, "Use the Kubernetes leader election mechanism for clustering")
 
 	// Load Balancer flags

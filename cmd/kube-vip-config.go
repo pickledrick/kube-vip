@@ -120,10 +120,9 @@ var kubeVipSampleManifest = &cobra.Command{
 						},
 						VolumeMounts: []appv1.VolumeMount{
 							{
-								Name: "config",
+								Name:      "config",
 								MountPath: "/etc/kube-vip/",
 							},
-
 						},
 					},
 				},
